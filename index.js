@@ -10,6 +10,7 @@ let employee = {
   console.log(
     updateEmployeeWithKeyAndValue(employee, "streetAddress", "11 Broadway")
   );
+
   function destructivelyUpdateEmployeeWithKeyAndValue(object, key, value) {
     object[key] = value;
     return object;
@@ -28,6 +29,7 @@ let employee = {
     return object3;
   }
   console.log(deleteFromEmployeeByKey(employee, "name"));
+  
   function destructivelyDeleteFromEmployeeByKey(object, key) {
     delete object[key];
     return object;
